@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>METelehealth</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:\Users\Aayush\Desktop\VS Code Projects\TSA\Webmaster Entry.css">
+    <script src="https://kit.fontawesome.com/cf459a696d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!--Header (Add Logo and favicon, change title)-->
+        <div class="header">
+            <p>what do I put up here</p>
+        </div>
+    
+        <div class="navbar">
+            <a href="#" style="float: left;"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"></a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fa fa-fw fa-shield-virus"></i> COVID-19</a>
+            <div class="dropdown">
+                <a href="#"><i class="fa fa-fw fa-user"></i> Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Personalized Care</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+            </div>
+            <a class="active" href="#" style="border-bottom: 3px solid rgb(23, 70, 143);"><i class="fa fa-fw fa-home"></i> Home</a> <!--style="text-decoration: underline;"-->
+        </div>
+
+    <div>
+        <div class="mySlides fade">
+          <img class="slideshow" src="https://expertphotography.com/wp-content/uploads/2011/06/how-to-take-good-pictures-image2.jpg">
+        </div>
+      
+        <div class="mySlides fade">
+          <img class="slideshow" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+        </div>
+      
+        <div class="mySlides fade">
+          <img class="slideshow" src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg">
+        </div>
+    </div>
+
+    <div>
+        <div style="background-color: white;">
+            <h1>Brief About</h1>
+            <p>Words</p>
+        </div>
+    </div> 
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+    </script>
+
+</body>
+
+</html>
