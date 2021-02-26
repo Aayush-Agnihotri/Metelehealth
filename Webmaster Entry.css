@@ -17,12 +17,92 @@ body, html{
     width: 100%;
 }
 
-.logo {
+ .logo {
     height: 25px;
     width: 100px;
 }
 
-.navbar {
+ul {
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    list-style-type: none;
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
+}
+
+ul > li {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+li {
+    display: inline;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(23, 70, 143);
+    transition: color 0.5s;
+}
+
+li:hover {
+    border-bottom: 2px solid rgb(23, 70, 143);
+}
+
+li > div {
+    text-decoration: none;
+    color: rgb(23, 70, 143);
+    transition: color 0.5s;
+}
+
+li > div:hover{
+    border-bottom: 2px solid rgb(23, 70, 143); 
+}
+
+.drop-down {
+    float: right;
+    overflow: hidden;
+}
+
+.drop-down { 
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgb(23, 70, 143);
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-contents a {
+    float: none;
+    color: rgb(23, 70, 143);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+  }
+
+.drop-down:hover .dropdown-contents {
+    display: block;
+}
+
+ /* .navbar {
     top: 0;
     left: 0;
     z-index: 999;
@@ -42,15 +122,12 @@ body, html{
     text-decoration: none;
     font-size: 18px;
     height: 25px;
+    transition: color 0.5s;
 }
 
 .navbar a:hover {
     background-color: rgb(185, 184, 184);
     border-bottom: 3px solid rgb(23, 70, 143);
-}
-  
-.active a {
-    
 }
 
 .dropdown {
@@ -88,7 +165,7 @@ body, html{
   
 .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 .slideshow {
     width: 100%;
