@@ -26,30 +26,39 @@
                 <p style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;Due to COVID-19, we are now taking extra precautions to ensure your safety. All telecommunications appointments will now take<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;place online through the online video conferencing platform Zoom.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;You can download Zoom <a href="https://zoom.us/">here.</a></p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;To check if you are a loved one has experienced symptoms of COVID-19, please visit this questionnaire:</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">ADD LINK TO QUESTIONNAIRE</a></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;To check if you are a loved one has experienced symptoms of COVID-19, please visit this <a href="#">questionnaire.</a></p>
             </div>
             <button class="button close1 fndrsubmit"><i class="fas fa-times"></i> <b>Close</b></button>
         </div>
     </div>
 
     <div>
-        <a href="#" style="float:left; position:absolute; padding-left: 5%; padding-top: 0.4%;"><img class="logo" src="images\logo.png"></a>
+        <a href="home.html" style="float:left; position:absolute; padding-left: 5%; padding-top: 0.4%;"><img class="logo" src="images\logo.png"></a>
         <div class="navbar">
         <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
         <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="#"><i class="fas fa-user-md"></i> Careers</a>
-        <a href="#"><i class="fa fa-fw fa-shield-virus"></i> COVID-19</a>
+        <a href="careers.html"><i class="fas fa-user-md"></i> Careers</a>
+            <div class="dropdown">
+                <a href="#"><i class="fa fa-fw fa-shield-virus"></i> COVID-19</a>
+                <div class="dropdown-content" style="min-width: 210px;">
+                        <a href="#" style="text-align: center;"><i class="fa fa-fw fa-shield-virus"></i> COVID-19</a>
+                        <a href="vaccinations.html" style="text-align: left;"><i class="fas fa-syringe"></i> Vaccinations</a>
+                        <a href="testing-centers.html" style="text-align: left;"><i class="fas fa-vial"></i></i> Testing Centers</a>
+                        <a href="https://www.worldometers.info/coronavirus/" style="text-align: left;"><i class="far fa-chart-bar"></i> Statistics</a>
+                        <a href="guidelines.html" style="text-align: left;"><i class="fas fa-head-side-mask"></i> Guidelines</a>
+                        <a href="symptoms.html" style="text-align: left;"><i class="fas fa-box-tissue"></i> Symptoms</a>
+                </div>
+            </div>
             <div class="dropdown">
                 <a href="#"><i class="fa fa-fw fa-user"></i> Services</a>
                     <div class="dropdown-content">
                         <a href="#" style="text-align: center;"><i class="fa fa-fw fa-user"></i> Services</a>
-                        <a href="#" style="text-align: left;"><i class="fas fa-hand-holding-medical"></i> Personalized Care</a>
-                        <a href="#" style="text-align: left;"><i class="fas fa-robot"></i> ChatBot</a>
-                        <a href="#" style="text-align: left;"><i class="fas fa-file-alt"></i> Forms</a>
+                        <a href="personal-care.html" style="text-align: left;"><i class="fas fa-hand-holding-medical"></i> Personalized Care</a>
+                        <a href="chatbot.html" style="text-align: left;"><i class="fas fa-robot"></i> ChatBot</a>
+                        <a href="forms.html" style="text-align: left;"><i class="fas fa-file-alt"></i> Forms</a>
                     </div>
             </div>
-            <a class="active" href="#" style="border-bottom: 3px solid rgb(23, 70, 143);"><i class="fa fa-fw fa-home"></i> Home</a> <!--style="text-decoration: underline;"-->
+            <a class="active" href="home.html" style="border-bottom: 3px solid rgb(23, 70, 143);"><i class="fa fa-fw fa-home"></i> Home</a>
         </div>
     </div>
 
@@ -86,9 +95,11 @@
 
                 <input style="margin-right: 23.2%; margin-top: 10px;" list="covid-types" id="covid-choice" name="covid-choice"/>
                 <datalist id="covid-types">
-                    <option value="Covid tab 1">
-                    <option value="Covid tab 2">
-                    <option value="Covid tab 3">
+                    <option value="Vaccinations">
+                    <option value="Testing Centers">
+                    <option value="Statistics">
+                    <option value="Guidelines">
+                    <option value="Symptoms">
                 </datalist>
 
                 <input style="margin-top: 10px;" list="career-types" id="career-choice" name="career-choice"/>
@@ -126,11 +137,11 @@
     <div class="footer">
         <h1>Quick Links</h1>
         <ul class="footerlinks">
-            <li><a href="#">Personalized Care</a></li>
-            <li><a href="#">ChatBot</a></li>
-            <li><a href="#">Forms</a></li>
+            <li><a href="personal-care.html">Personalized Care</a></li>
+            <li><a href="chatbot.html">ChatBot</a></li>
+            <li><a href="forms.html">Forms</a></li>
             <li><a href="#">COVID-19</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <a href="#"><i class="far fa-envelope" style="font-size:x-large; padding-left: 10px; padding-right: 10px;"></i></a>
