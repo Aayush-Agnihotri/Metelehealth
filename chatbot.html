@@ -36,22 +36,63 @@
             </div>
 
             <div class="text-chat">
-                <div class="chatbot-answer">
-                    <p>beep. boop.</p>
-                </div>
-                <div class="user-question">
-                    <p>I need help</p>
-                </div>
+                <div>ChatBot: <span id="chatbot"></span></div>
+                <div>user: <span id="user"></span></div>
 
                 <div class="question-area">
                     <hr class="text-division">
-                    <form class="text-box">
-                        <input type="search" id="question" name="question" placeholder="Ask Any Medical Questions!">
-                        <input type="submit" value="Ask ChatBot">
-                    </form>
+                    <div class="text-box">
+                        <div><input id="input" type="text" placeholder="Ask Any Medical Questions!" autocomplete="off"/></div>
+                        <!-- <input type="submit" value="Ask ChatBot"> -->
+                    </div>
                 </div>
 
             </div>
-
+            <script type="text/javascript">
+                var trigger = [
+                    ["hi"],
+                    ["what can you do", "what are you", "who are you"]
+                ];
+                var reply = [
+                    ["Hey there, As me anything! Also, wash your hands", "Greetings, I'm happy to answer any medical questions for you", "Hey, you mind helping me. I'm stuck in this box"],
+                    ["My name is ChatBot, and I am you personal assitant for anything medical! Just ask me anything realted to COVID-19, vaccinnes, daily health tips, "]
+                ];
+                var alternative = ["i am good","I could be better"];
+                document.querySelector("#input").addEventListener("keypress", function(e){
+                    var key = e.which || e.keyCode;
+                    if(key === 13) {
+                        var input = document.getElementById("input").value;
+                        document.getElementById("user").innerHTML = input;
+                        output(input);
+                    }
+                });
+                function output(input){
+                    try{
+                        var product = input + "=" + eval(input);
+                    } catch(e){
+                        var text = (input.toLowerCase()).replace(/[^\w\s\d]/gi, "");
+                        text = text.replace(/ a /g, " ");
+                        if(compare(trigger, reply, text)){
+                            var product = compare(trigger, reply, text);
+                        } else {
+                            var product = alternative[Math.floor(Math.random()*alternative.length)];
+                        }
+                    }
+                    document.getElementById("chatbot").innerHTML = product;
+                    document.getElementById("input").value = ""; //clear text box
+                }
+                function compare(arr, array, string){
+                    var item;
+                    for(var x=0; x<arr.length; x++){
+                        for(var y=0; y<array.length; y++){
+                            if(arr[x][y] == string){
+                                items = array[x];
+                                item = items[Math.floor(Math.random()*items.length)];
+                            }
+                        }
+                    }
+                    return item;
+                }
+            </script>
         </body>
 </html>
