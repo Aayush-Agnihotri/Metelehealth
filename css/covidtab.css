@@ -25,7 +25,6 @@ body, html{
     width: 100%;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    padding-bottom: 0.0132cm;
 }
 
 .navbar a {
@@ -133,81 +132,28 @@ body, html{
     color: rgb(134, 157, 194);
     font-family: inherit;
     margin: 0; 
-    border-bottom: 5px solid rgb(5, 25, 58);
-    border-top: 5px solid rgb(5, 25, 58);
-  }
+  } 
   .writing {
     text-align: center;
-    font-size: 20px;  
-    color: rgb(39, 95, 179);
+    font-size: 40px;
     font-family: inherit;
-    margin: 0;  
-    padding-top: 4%;
+    margin: 0;
   }
-
-  .accordion {
-      background-color: #eee;
-      color: rgb(23, 70, 143);
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      text-align: left;
-      border: 10px solid #ddd;
-      transition: 0.4s;
-      font-family: inherit;
-      font-size: 20px;
-    }
-  
-  .active, .accordion:hover {
-      background-color: #ccc;
-    }
-  
-  .accordion:after {
-      content: '\02795';
-      font-size: 13px;
-      color: #777;
-      float: right;
-      margin-left: 5px;
-    }
-    
-  .active:after {
-      content: "\2796"; 
-    }
-  
-  .panel {
-      padding: 0 18px;
-      background-color: white;
-      color:rgb(23, 70, 143);
-      display: none;
-      overflow: hidden;
-    }
-  .signup {
-    text-align: center;
-    font-size: 20px;  
-    color: rgb(39, 95, 179);
-    font-family: inherit;
-    margin: 0;  
-    padding-top: 4%;
-  }
-  .link a:link {
+  .writing a:link {
     text-decoration: none;
-    color: rgb(39, 95, 179);
+    color: white;
   }
-  .link a:visited {
+  .writing a:visited {
     text-decoration: none;
-    color: rgb(39, 95, 179);
+    color: white;
   }
     
-  .link a:hover {
+  .writing a:hover {
     text-decoration: underline;
-    color: rgb(75, 127, 206);
+    color: rgb(192, 208, 235);
   }
     
-  .link a:active {
+  .writing a:active {
     text-decoration: underline;
-    color: rgb(39, 95, 179);
-  }
-  .accordions {
-    border-bottom: 5px solid rgb(5, 25, 58);
-    padding-bottom: 2%;
+    color: white;
   }
