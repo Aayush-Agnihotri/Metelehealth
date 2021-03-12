@@ -168,7 +168,7 @@ body, html{
 
 .slideshow {
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 
 .mySlides {
@@ -189,7 +189,7 @@ body, html{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -80px;
+  margin-top: -140px;
   left: 0;
   right: 0;
   text-align: center;
@@ -230,8 +230,8 @@ body, html{
 }
 
 .parallax {
-  background-image: url('http://webmeup.com/upload/blog/lead-image-105.png');
-  height: 50%; 
+  background-image: url('../images/parallax.jpg');
+  height: 70%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
