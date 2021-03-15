@@ -96,20 +96,20 @@
         <div class="finder">
             <form class="form-inline" onsubmit="return false">
 
-                <label for="Services" style="color: white; font-size: 20px; padding-right: 24%;" ><b>Explore Care Options:</b></label>
-                <div class="verticalline" style="left:30%;" ></div>
-                <label for="Services" style="color: white; font-size: 20px; padding-right: 24%;"><b>COVID-19 Help:</b></label>
-                <div class="verticalline" style="left:65%;"></div>
-                <label for="Careers" style="color: white; font-size: 20px;"><b>Search Career Opportunities:</b></label>
-
-                <input style="margin-right: 27.8%; margin-top: 10px;" list="service-types" id="service-choice" name="service-choice"/>
+                <label for="Services" style="color: white; font-size: 20px;" ><b>Explore Care Options:</b></label>
+                <input list="service-types" id="service-choice" name="service-choice"/>
                 <datalist id="service-types">
                     <option value="Personal Care">
                     <option value="ChatBot">
                     <option value="Forms">
                 </datalist>
+                <button type="submit" class="fndrsubmit" onclick="options()"><b>Find Care</b></button>
+                <p id="empty" style="color: red;"></p>
 
-                <input style="margin-right: 23.2%; margin-top: 10px;" list="covid-types" id="covid-choice" name="covid-choice"/>
+                <hr>                
+
+                <label for="Services" style="color: white; font-size: 20px;"><b>COVID-19 Help:</b></label>
+                <input list="covid-types" id="covid-choice" name="covid-choice"/>
                 <datalist id="covid-types">
                     <option value="Vaccinations">
                     <option value="Testing Centers">
@@ -118,21 +118,20 @@
                     <option value="Symptoms">
                     <option value="Questionnaire">
                 </datalist>
+                <button type="submit" class="fndrsubmit" onclick="help()"><b>Find Help</b></button>
+                <p id="empty1" style="color:red;"></p>
 
-                <input style="margin-top: 10px;" list="career-types" id="career-choice" name="career-choice"/>
+                <hr>
+                
+                <label for="Careers" style="color: white; font-size: 20px;"><b>Search Career Opportunities:</b></label>
+                <input list="career-types" id="career-choice" name="career-choice"/>
                 <datalist id="career-types">
                     <option value="Jobs">
                     <option value="Internships">
                     <option value="Doctors"></option>
                 </datalist>
-
-                <button style="margin-right: 32.8%; margin-top: 10px;" type="submit" class="fndrsubmit" style="margin-right: 200px;" onclick="options()"><b>Find Care</b></button>
-                <button style="margin-right: 28%; margin-top: 10px;" type="submit" class="fndrsubmit" style="margin-right: 200px;" onclick="help()"><b>Find Help</b></button>
-                <button style="margin-right: 15%; margin-top: 10px;" type="submit" class="fndrsubmit" style="margin-right: 200px;" onclick="careers()"><b>Find Careers</b></button>
-
-                <p id="empty" style="margin-right: 39%; color: red;"></p>
-                <p id="empty1" style="margin-right: 36.5%; color:red;"></p>
-                <p id="empty2" style="color:red;"></p>                
+                <button type="submit" class="fndrsubmit" onclick="careers()"><b>Find Careers</b></button>
+                <p id="empty2" style="color:red;"></p>             
 
               </form>
         </div>
