@@ -12,7 +12,7 @@ body, html{
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 10%;
   left: 0;
   top: 0;
   width: 100%;
@@ -25,7 +25,7 @@ body, html{
 .modal-content {
   background-color: rgb(23, 70, 143);
   margin: auto;
-  padding: 20px;
+  padding: 2%;
   border: 1px solid #ffffff;
   width: 60%;
 }
@@ -80,8 +80,7 @@ body, html{
 }
 
 .logo {
-  height: 40px;
-  width: 140px;
+  width: 55%;
 }
 
 .navbar {
@@ -168,7 +167,7 @@ body, html{
 
 .slideshow {
   width: 100%;
-  height: 650px;
+  height: 700px;
 }
 
 .mySlides {
@@ -194,6 +193,7 @@ body, html{
   right: 0;
   text-align: center;
   padding: 50px;
+  font-size: 20px;
 }
 
 @media (max-width: 800px) {
@@ -308,9 +308,31 @@ body, html{
   to {opacity: 1}
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .navbar a {
     float: none;
+    display: inline-block;
+  }
+  .modal {
+    width: 55%;
+  }
+  .modal-text p {
+    margin-left: 30%;
+  }
+  .slideshow {
+    height: 350px;
+  }
+  .finder {
+    width: 80%;
+    padding: 20px;
+    font-size: 10px;
     display: block;
+    margin-top: -120px;
+  }
+  .parallax {
+    height: 70%;
+  }
+  .verticalline {
+    display: none;
   }
 }
