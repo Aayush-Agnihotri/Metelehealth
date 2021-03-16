@@ -368,3 +368,15 @@ body, html{
   text-align: center;
   color: rgb(23, 70, 143);
 }
+
+.chatbot-icon {
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  z-index: 1;
+  background-color: white;
+  color: rgb(23, 70, 143);
+  text-align: center;
+  padding: 15px;
+  border-radius: 50%;
+}
