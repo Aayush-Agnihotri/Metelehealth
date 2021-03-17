@@ -380,3 +380,10 @@ body, html{
   padding: 15px;
   border-radius: 50%;
 }
+
+.chatbot-icon:hover{
+  color: rgb(185, 184, 184);
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
