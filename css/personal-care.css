@@ -133,8 +133,6 @@ body, html{
   color: rgb(134, 157, 194);
   font-family: inherit;
   margin: 0; 
-  border-bottom: 5px solid rgb(5, 25, 58);
-  border-top: 5px solid rgb(5, 25, 58);
 }
 .writing {
   text-align: center;
