@@ -232,12 +232,23 @@ body, html{
   background-size: cover;
 }
 
-.text {
+.text-container {
   background-color: white;
   width: 100%;
   content: "";
   clear: both;
   display: table;
+  color: rgb(23, 70, 143);
+}
+
+.text-title {
+  padding-left: 13%;
+  width: 65ch;
+}
+
+.text-paragraph {
+  padding-left: 8%;
+  width: 65ch;
 }
   
 .verticalline {
