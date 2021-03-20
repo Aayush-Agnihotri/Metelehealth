@@ -75,14 +75,8 @@
     <!--End of navbar-->
 
     <!--Start of Chatbot icon-->
-    <div class="container" id="chatbot-container" onclick="window.location.href = 'chatbot.html';" style="cursor: pointer;">
-        <div id="chatbot">
-            <div id="chatbot-dot1" class="dot"></div>
-            <div id="chatbot-dot2" class="dot"></div>
-            <div id="chatbot-dot3" class="dot"></div>
-            </a>
-        </div>
-        <div id="chatbot-corner"></div>
+    <div class="chatbot-icon">
+        <a href="chatbot.html"><i style="font-size: 50px; color: rgb(23, 70, 143);" class="fas fa-comment-medical"></i></a>
     </div>
     <!--End of Chatbot icon-->
 
@@ -101,12 +95,6 @@
         </div>
     </div>
     <!--End of slideshow-->
-
-    <!--Start of scroll down arrow-->
-    <div class="arrow bounce" id="arrow">
-        <a class="fa fa-arrow-down fa-2x" href="#"></a>
-    </div>
-    <!--End of scroll down arrow-->
 
     <!--Start of finder-->
     <div>
@@ -390,24 +378,6 @@
                 slides[slideIndex-1].style.display = "block";
                 setTimeout(showSlides, 5000); // Change image every 5 seconds
             }
-
-        var target = document.querySelector('#text');
-        var arrow = document.querySelector('#arrow');
-
-        document.addEventListener('scroll', () => {
-            if (window.scrollY >= target.getBoundingClientRect().top) {
-                arrow.style.display = "none";
-            }
-        })
-
-        var end = document.querySelector('#end');
-        var chatboticon = document.querySelector('#chatbot-container');
-
-        document.addEventListener('scroll', () => {
-            if (window.scrollY >= end.getBoundingClientRect().top) {
-                chatboticon.style.display = "none";
-            }
-        })
 
     </script>
     <!--End of JavaScript-->
