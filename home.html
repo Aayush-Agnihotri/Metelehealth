@@ -75,9 +75,15 @@
     <!--End of navbar-->
 
     <!--Start of Chatbot icon-->
-        <div class="chatbot-icon">
-            <a href="chatbot.html"><i style="font-size: 50px; color: rgb(23, 70, 143);" class="fas fa-comment-medical"></i></a>
+    <div class="container" id="chatbot-container" onclick="window.location.href = 'chatbot.html';" style="cursor: pointer;">
+        <div id="chatbot">
+            <div id="chatbot-dot1" class="dot"></div>
+            <div id="chatbot-dot2" class="dot"></div>
+            <div id="chatbot-dot3" class="dot"></div>
+            </a>
         </div>
+        <div id="chatbot-corner"></div>
+    </div>
     <!--End of Chatbot icon-->
 
     <!--Start of slideshow-->
@@ -95,6 +101,12 @@
         </div>
     </div>
     <!--End of slideshow-->
+
+    <!--Start of scroll down arrow-->
+    <div class="arrow bounce" id="arrow">
+        <a class="fa fa-arrow-down fa-2x" href="#"></a>
+    </div>
+    <!--End of scroll down arrow-->
 
     <!--Start of finder-->
     <div>
@@ -151,7 +163,7 @@
     <!--End of parallax image-->
 
     <!--Start of text-->
-        <div class="text-container">
+        <div class="text-container" id="text">
             <p>
                 <iframe style="float: right; padding: 15px; padding-right: 40px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.164552174343!2d-74.77879034127805!3d40.268439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c158007c5c94bb%3A0xcb796d4065b0348a!2sThe%20College%20of%20New%20Jersey!5e0!3m2!1sen!2sus!4v1613687632991!5m2!1sen!2sus" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div class="verticalline"></div>
@@ -240,7 +252,7 @@
             </div>
         </div>
         <img style="display: inline-block; width: 220px; height: 220px;" src="https://isv-online.org/files/1-11.jpg">
-        <p style="height: 2%; background-color: white;">&nbsp;</p>
+        <p id="end" style="height: 2%; background-color: white;">&nbsp;</p>
     </div>
     <!--End of testimonials-->
 
@@ -378,6 +390,25 @@
                 slides[slideIndex-1].style.display = "block";
                 setTimeout(showSlides, 5000); // Change image every 5 seconds
             }
+
+        var target = document.querySelector('#text');
+        var arrow = document.querySelector('#arrow');
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY >= target.getBoundingClientRect().top) {
+                arrow.style.display = "none";
+            }
+        })
+
+        var end = document.querySelector('#end');
+        var chatboticon = document.querySelector('#chatbot-container');
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY >= end.getBoundingClientRect().top) {
+                chatboticon.style.display = "none";
+            }
+        })
+
     </script>
     <!--End of JavaScript-->
 
