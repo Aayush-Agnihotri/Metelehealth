@@ -134,9 +134,9 @@ body, html{
 }
 
 .interactive-area {
-    position: absolute;
-    bottom: 0.1%;
-    width: 62%;
+    /* position: absolute; */
+    bottom: 10px;
+    /* width: 62%; */
 }
 
 .chatbot-icon {
@@ -157,6 +157,7 @@ body, html{
     background-color: #f1f1f1;
     border-radius: 5px;
     font-size: 20px;
+    margin-bottom: 10%;
 
 }
 .question-area {
@@ -200,23 +201,6 @@ input[type=text], select{
     font-size: 20px;
 }
 
-/* .user-question {
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    margin-right: 85%
-}
-
-.chatbot-answer {
-    border: 2px solid #ccc;
-    background-color: #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    margin-left:85%;
-}
 
 /* Footer CSS */
 .footer {
