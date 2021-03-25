@@ -82,16 +82,21 @@
             </div>
 
             <script type="text/javascript">
+                var here = "HERE";
                 var trigger = [
                     ["hi", "hello"],
                     ["what can you do", "what are you", "who are you"],
+                    ["personal care", "health Care", "Protect myself", "protect others"],
+                    ["Billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay"],
                     ["covid", "covid19", "coronavirus", "vaccine", "covid vaccine", "covid-19 vaccine", "coronavirus vaccine", "covid testing sites", "covid-19 testing sites", "coronavirus testing sites"],
                     ["help", "assistance"],
                     ["help me"],
                 ];
                 var reply = [
                     ["Hey there, As me anything! Also, wash your hands", "Greetings, I'm happy to answer any medical questions for you", "Hey, you mind helping me. I'm stuck in this box"],
-                    ["My name is ChatBot, and I am you personal assitant for anything medical! Just ask me anything realted to COVID-19, vaccinnes, daily health tips, "],
+                    ["My name is ChatBot, and I am you personal assitant for anything medical! Just ask me anything realted to COVID-19, vaccinnes, daily health tips"],
+                    ["Personal Care is important for keeping you, as well as those around you, safe. Navigate to our <q>Perosnal Care</q> page for more information." + here.link("personal-care.html")],
+                    ["billing stuff"],
                     ["Navigate to our <q>COVID-19</q> page to receive all information about COVID-19"],
                     ["No need to fear, CHATBOT is here! Ask me any questions about COVID-19"],
                     ["Of course, as me any questions about COVID-19, vaccination, bills"],
@@ -111,7 +116,7 @@
                         var product = input + "=" + eval(input);
                     } catch(e){
                         var text = (input.toLowerCase()).replace(/[^\w\s]/gi, "");
-                        text = text.replace(/ a /g, " ").replace(/i need /g, "").replace(/can you /g, "").replace(/please /g, "").replace(/ please/g, "").replace(/where can I get a/g, "").replace(/what is a/g, "").replace(/what is/g, "");
+                        text = text.replace(/ a /g, " ").replace(/i need /g, "").replace(/can you /g, "").replace(/please /g, "").replace(/ please /g, "").replace(/where can I get a /g, "").replace(/what is a /g, "").replace(/what is /g, "").replace(/where can I get /g, "").replace(/can you help me /g, "");
                         if(compare(trigger, reply, text)){
                             var product = compare(trigger, reply, text);
                         } else {
