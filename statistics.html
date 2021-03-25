@@ -293,6 +293,7 @@
                 natVaccinesDistributed = natVaccinesDistributed + TVacD;
                 
             }
+
             document.getElementById("natPopulation").innerHTML = natPopulation.toLocaleString();
             document.getElementById("natNewCases").innerHTML = natNewCases.toLocaleString();
             document.getElementById("natNewDeaths").innerHTML = natNewDeaths.toLocaleString();
@@ -302,9 +303,10 @@
             document.getElementById("natICUCapacity").innerHTML = natICUCapacity.toLocaleString();
             document.getElementById("natICUCovidUse").innerHTML = natICUCovidUse.toLocaleString();
             document.getElementById("natICUTotalUse").innerHTML = natICUTotalUse.toLocaleString();
-
+            
         })
 
+    setTimeout(() => {console.log("Waiting for API"); }, 1000);
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(njdrawChart);
     google.charts.setOnLoadCallback(natdrawChart);
