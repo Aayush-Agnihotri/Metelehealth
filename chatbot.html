@@ -10,7 +10,7 @@
         </head>
 
         <body>
-
+ 
             <div class="header">
                 <p>If you are experiencing COVID-19 symptoms, please call <b>1-800-123-4567</b> or email <a style="color: white;" href="mailto:contact@metelehealth.com"><b>contact@metelehealth.com</b></a></p>
             </div>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="services.html"><i class="fa fa-fw fa-user"></i> Services</a>
+                        <a href="services.html" style="border-bottom: 3px solid rgb(23, 70, 143);"><i class="fa fa-fw fa-user"></i> Services</a>
                             <div class="dropdown-content" style="min-width: 191px;">
                                 <a href="services.html" style="text-align: center;"><i class="fa fa-fw fa-user"></i> Services</a>
                                 <a href="personal-care.html" style="text-align: left;"><i class="fas fa-hand-holding-medical"></i> Personal Care</a>
@@ -49,7 +49,7 @@
                                 <a href="forms.html" style="text-align: left;"><i class="fas fa-file-alt"></i> Forms</a>
                             </div>
                     </div>
-                    <a class="active" href="services.html" style="border-bottom: 3px solid rgb(23, 70, 143);"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
                 </div>
             </div>
 
@@ -57,18 +57,18 @@
                 <p><b>ChatBot</b></p>
             </div>
 
-            <div class="chat-title">
+            <!--<div class="chat-title">
                 Need Help? Ask Our ChatBot Your Medical Questions!
-            </div>
+            </div> -->
 
             <div class="text-chat">
                 <div class="icon-section">
                     <div class="chatbot-icon"><i class="fas fa-robot"></i></div>
                 </div>
-                <div class="chatbot-answer">ChatBot: <span id="chatbot"></span></div>
+                <div class="chatbot-answer">ChatBot: <span id="chatbot">Hello, I'm ChatBot, your personal assistant on METtelehealth. Feel Free to ask me any medical related questions that you have and I'll happily answer them. I can asnwer questions like "Where can I find a Doctor?", "What is Covid-19?", or "How can I keep people around me safe?".</span></div>
                 
                 <div class="interactive-area">
-                    <div class="user-answer">User: <span id="user"></span></div>
+                    <div class="user-answer">User: <span id="user">See your most recent question here!</span></div>
 
                     <div class="question-area">
                         <hr class="text-division">
@@ -84,25 +84,46 @@
             <script type="text/javascript">
                 var here = "HERE";
                 var trigger = [
-                    ["hi", "hello"],
-                    ["what can you do", "what are you", "who are you"],
-                    ["personal care", "health Care", "Protect myself", "protect others"],
-                    ["Billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay"],
+                    ["hi", "hello", "greetings", "whats up", "hola", ],
+                    ["what can you do", "what are you", "who are you", "how are you"],
+                    /* Personal Care Page */
+                    ["personal care", "health Care", "Protect myself", "protect others", "quote", "quotes"],
+                    ["billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay", "help paying bills", ""],
+                    ["doctor", "find doctor", "doctor", "the doctor", "some doctor", "doc", "a doc", "some doc", "find doctors"],
+                    ["daily health checklist", "daily health", "checklist", "health checklist", "healthy", "stay healthy", "stay healthy", "everyday"],
+                    ["disease", "diseases", "infection", "infections", "diagnosis", "diagnoser", "find my disease"],
+                    ["healthcare", "health care", "healthcare guidelines", "care", "insurance","health insurance"],
+                    /* Forms Page */
+                    ["patient form", "patient forms", "form", "forms", "vaccine forms" , "vaccine form" , "job form", "job forms", "tracking forms", "tracking form", "tracking charts", "tracking chart", "patient", "patients", "job", "jobs", "vaccine", "vaccines", "tracking", "trackings"],
+                    /* COVID Page */
                     ["covid", "covid19", "coronavirus", "vaccine", "covid vaccine", "covid-19 vaccine", "coronavirus vaccine", "covid testing sites", "covid-19 testing sites", "coronavirus testing sites"],
+                    ["testing site", "testing sites", "testing center", "testing centers", "covid testing site", "covid19 testing site", "coronavirus testing site","covid testing sites","covid testing centers","covid testing center","covid19 testing sites", "covid19 testing center", "covid19 testing centers", "coronavirus testing sites", "coronavirus testing center", "coronavirus testing centers"],
+                    ["statistics", "numbers", "number", "deaths", "infections", "covid deaths"],
+                   
                     ["help", "assistance"],
                     ["help me"],
                 ];
                 var reply = [
                     ["Hey there, As me anything! Also, wash your hands", "Greetings, I'm happy to answer any medical questions for you", "Hey, you mind helping me. I'm stuck in this box"],
                     ["My name is ChatBot, and I am you personal assitant for anything medical! Just ask me anything realted to COVID-19, vaccinnes, daily health tips"],
-                    ["Personal Care is important for keeping you, as well as those around you, safe. Navigate to our <q>Perosnal Care</q> page for more information." + here.link("personal-care.html")],
-                    ["billing stuff"],
-                    ["Navigate to our <q>COVID-19</q> page to receive all information about COVID-19"],
+                    /* Personal Care Page */
+                    ["Personal Care is important for keeping you, as well as those around you, safe. To find out more navigate to our <q>Perosnal Care</q> page by clicking "+ here.link("personal-care.html")],
+                    ["METelehealth makes it easy for you to pay for all your medical expenses. To find all our medical payments forms, click " + here.link("personal-care.html")],
+                    ["METelehealth allows you to find any doctor, even for urgent care, any time. Just click <q>Find a Doctor</q> on our <q>Personal Care</q> page by clicking " + here.link("personal-care.html")],
+                    ["We believe it is important to maintain good health every single day. That is why we created a Daily Health Checklist in our <q>Presonal Care</q> page, which can be accessed by clicking " + here.link("personal-care.html") + " and navigating to <q>Daily Health Checklist</q>, to protect you and those around you."],
+                    ["It is very important to frequently monitor your health for any possible diseases or infections. To fully and accurately monitor your health, navigate to the diagnoser by clicking " + here.link("personal-care.html") +"."],
+                    ["Health care is essential for all people in order to maintain a happy and healthy life. For more information on healhcare eligibility, view the <q>Healthcare Guidelines</q> tab by clicking " + here.link("personal-care.html") + "."],
+                    /* Forms Page */
+                    ["We offer a variety of forms, ranging from vaccine forms, job forms, patient forms, and tracking charts. To view all forms METtelehealth offers, head to our <q>Forms</q> page by clicking " + here.link("forms.html")],
+                    /* COVID Page */
+                    ["There are many resources for all things realted to COVID-19, which can be viewed by clicking " + here.link("covid.html") + ", but if you would like to view more specific information about COVID-19, try asking about vaccines or statistics."],
+                    ["Getting a COVID-19 test is critical to determine quaratine status and protect people around you. To find COVID-19 testing sites near you, visit our <q>Testing Centers</q> page by clicking " + here.link("testing-centers") + "."],
+                    
                     ["No need to fear, CHATBOT is here! Ask me any questions about COVID-19"],
                     ["Of course, as me any questions about COVID-19, vaccination, bills"],
 
                 ];
-                var alternative = ["Sorry, looks like your intellecutal capabilites transcend my processing power. Try asking medical questions like, <q>What is COVID-19,</q> <q>Where can I get a COVID-19 vaccine,</q> <q>What can I do on Metelehealth,</q> or just simply ask for help."];
+                var alternative = ["Sorry, looks like your intellecutal capabilites transcend my processing power. Try asking medical questions like, <q>What is COVID-19,</q> <q>Where can I get a COVID-19 vaccine,</q> <q>What can I do on Metelehealth,</q>; you can also search key words like <q>Vaccines</q> or <q>Statistics</q>."];
                 document.querySelector("#input").addEventListener("keypress", function(e){
                     var key = e.which || e.keyCode;
                     if(key === 13) {
@@ -116,7 +137,7 @@
                         var product = input + "=" + eval(input);
                     } catch(e){
                         var text = (input.toLowerCase()).replace(/[^\w\s]/gi, "");
-                        text = text.replace(/ a /g, " ").replace(/i need /g, "").replace(/can you /g, "").replace(/please /g, "").replace(/ please /g, "").replace(/where can I get a /g, "").replace(/what is a /g, "").replace(/what is /g, "").replace(/where can I get /g, "").replace(/can you help me /g, "");
+                        text = text.replace(/ a /g, " ").replace(/i need /g, "").replace(/can you /g, "").replace(/please /g, "").replace(/ please /g, "").replace(/where can i get a /g, "").replace(/what is a /g, "").replace(/what is /g, "").replace(/where can i get /g, "").replace(/can you help me /g, "").replace(/to /g, "").replace(/ to /g, "").replace(/what should i do /g, "").replace(/what do i do /g, "").replace(/do i have /g, "").replace(/i think i have /g, "").replace(/ near me/g, "").replace(/ any /g, "").replace(/are there /g, "").replace(/what are /g, "").replace(/ the /g, "");
                         if(compare(trigger, reply, text)){
                             var product = compare(trigger, reply, text);
                         } else {
