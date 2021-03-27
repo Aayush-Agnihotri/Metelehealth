@@ -211,3 +211,22 @@ body, html{
   .card-container {
     padding: 2px 16px;
   }
+
+  .chatbot-icon {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 1;
+    background-color: white;
+    color: rgb(23, 70, 143);
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  .chatbot-icon:hover{
+    color: rgb(185, 184, 184);
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
