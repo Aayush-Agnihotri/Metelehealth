@@ -84,8 +84,10 @@
             <script type="text/javascript">
                 var here = "HERE";
                 var trigger = [
+                    /* Greetings */
                     ["hi", "hello", "greetings", "whats up", "hola", ],
                     ["what can you do", "what are you", "who are you", "how are you"],
+                    ["chatbot"],
                     /* Personal Care Page */
                     ["personal care", "health Care", "Protect myself", "protect others", "quote", "quotes"],
                     ["billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay", "help paying bills", ""],
@@ -96,16 +98,19 @@
                     /* Forms Page */
                     ["patient form", "patient forms", "form", "forms", "vaccine forms" , "vaccine form" , "job form", "job forms", "tracking forms", "tracking form", "tracking charts", "tracking chart", "patient", "patients", "job", "jobs", "vaccine", "vaccines", "tracking", "trackings"],
                     /* COVID Page */
-                    ["covid", "covid19", "coronavirus", "vaccine", "covid vaccine", "covid-19 vaccine", "coronavirus vaccine", "covid testing sites", "covid-19 testing sites", "coronavirus testing sites"],
+                    ["covid", "covid19", "coronavirus", "vaccine", "covid vaccine", "covid19 vaccine", "coronavirus vaccine", "covid testing sites", "covid-19 testing sites", "coronavirus testing sites"],
+                    ["vaccine", "covid vaccine", "covid19 vaccine"],
                     ["testing site", "testing sites", "testing center", "testing centers", "covid testing site", "covid19 testing site", "coronavirus testing site","covid testing sites","covid testing centers","covid testing center","covid19 testing sites", "covid19 testing center", "covid19 testing centers", "coronavirus testing sites", "coronavirus testing center", "coronavirus testing centers"],
-                    ["statistics", "numbers", "number", "deaths", "infections", "covid deaths"],
-                   
+                    ["statistics", "numbers", "number", "deaths", "death", "infection","infections", "cases", "case", "covid deaths", "covid infections", "coronavirus deaths", "coronavirus infections", "covid19 deaths", "covid19 infections", "covid statistics", "covid numbers", "covid number", "covid cases", "covid case", "covid death" ,"covid infection", "covid19 statistics", "covid19 numbers", "covid19 number", "covid19 cases", "covid19 case", "covid19 death", "covid19 infection", "coronavirus statistics", "coronavirus numbers", "coronavirus number", "coronavirus cases", "coronavirus case", "coronavirus death", "coronavirus infections"],
+                    /* help */
                     ["help", "assistance"],
                     ["help me"],
                 ];
                 var reply = [
+                    /* Greetings */
                     ["Hey there, As me anything! Also, wash your hands", "Greetings, I'm happy to answer any medical questions for you", "Hey, you mind helping me. I'm stuck in this box"],
                     ["My name is ChatBot, and I am you personal assitant for anything medical! Just ask me anything realted to COVID-19, vaccinnes, daily health tips"],
+                    ["Yes, that's me!"],
                     /* Personal Care Page */
                     ["Personal Care is important for keeping you, as well as those around you, safe. To find out more navigate to our <q>Perosnal Care</q> page by clicking "+ here.link("personal-care.html")],
                     ["METelehealth makes it easy for you to pay for all your medical expenses. To find all our medical payments forms, click " + here.link("personal-care.html")],
@@ -117,8 +122,10 @@
                     ["We offer a variety of forms, ranging from vaccine forms, job forms, patient forms, and tracking charts. To view all forms METtelehealth offers, head to our <q>Forms</q> page by clicking " + here.link("forms.html")],
                     /* COVID Page */
                     ["There are many resources for all things realted to COVID-19, which can be viewed by clicking " + here.link("covid.html") + ", but if you would like to view more specific information about COVID-19, try asking about vaccines or statistics."],
+                    [],
                     ["Getting a COVID-19 test is critical to determine quaratine status and protect people around you. To find COVID-19 testing sites near you, visit our <q>Testing Centers</q> page by clicking " + here.link("testing-centers") + "."],
-                    
+                    ["To view up-to-date COVID-19 statistics, click " + here.link("https://www.worldometers.info/coronavirus/") + "."],
+                    /* help */
                     ["No need to fear, CHATBOT is here! Ask me any questions about COVID-19"],
                     ["Of course, as me any questions about COVID-19, vaccination, bills"],
 
@@ -137,7 +144,7 @@
                         var product = input + "=" + eval(input);
                     } catch(e){
                         var text = (input.toLowerCase()).replace(/[^\w\s]/gi, "");
-                        text = text.replace(/ a /g, " ").replace(/i need /g, "").replace(/can you /g, "").replace(/please /g, "").replace(/ please /g, "").replace(/where can i get a /g, "").replace(/what is a /g, "").replace(/what is /g, "").replace(/where can i get /g, "").replace(/can you help me /g, "").replace(/to /g, "").replace(/ to /g, "").replace(/what should i do /g, "").replace(/what do i do /g, "").replace(/do i have /g, "").replace(/i think i have /g, "").replace(/ near me/g, "").replace(/ any /g, "").replace(/are there /g, "").replace(/what are /g, "").replace(/ the /g, "");
+                        text = text.replace(/ a /g, " ").replace(/i need /g, "").replace(/can you /g, "").replace(/please /g, "").replace(/ please /g, "").replace(/where can i get a /g, "").replace(/what is a /g, "").replace(/what is /g, "").replace(/where can i get /g, "").replace(/can you help me /g, "").replace(/to /g, "").replace(/ to /g, "").replace(/what should i do /g, "").replace(/what do i do /g, "").replace(/do i have /g, "").replace(/i think i have /g, "").replace(/ near me/g, "").replace(/ any /g, "").replace(/are there /g, "").replace(/what are /g, "").replace(/ the /g, " ").replace(/how many /g, "").replace(/ are there /g, "").replace(/are there /g, "").replace(/ /g, "");
                         if(compare(trigger, reply, text)){
                             var product = compare(trigger, reply, text);
                         } else {
