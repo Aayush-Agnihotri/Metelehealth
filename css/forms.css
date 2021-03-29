@@ -112,7 +112,7 @@ text-align: left;
 }
 
 .accordions {
-  padding-bottom: 2%;
+  border-bottom: black 2px solid;
 }
 
 .accordion {
