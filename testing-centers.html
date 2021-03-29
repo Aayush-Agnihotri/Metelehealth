@@ -123,6 +123,7 @@
                 </datalist>
             <br> 
             <button type="submit" class="fndrsubmit" onclick="testingcenters()"><b>Find Testing Center</b></button>
+            <p id="rejection" style="color: red;"></p>
         </div>
         <br>
         <br>
@@ -145,7 +146,8 @@
     <a href="home.html"><img style="padding-top: 10px;" width="250px" height="60px" src="images\logo-filled.png"></a>
     <p>©2021 METelehealth</p>
 </div>
-        <script> 
+        <script>
+            var empty = "Please select one of the options provided";
             var acc = document.getElementsByClassName("accordion");
             var i;
             
@@ -206,7 +208,7 @@
         window.location.href = "https://www.riversidemedgroup.com/services/urgent-care/hamilton-nj/";
     }
     else {
-        document.getElementById("empty").innerHTML = empty.bold();
+        document.getElementById("rejection").innerHTML = empty.bold();
     }
 }
             </script>
