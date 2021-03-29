@@ -137,7 +137,7 @@
                         </datalist>
                         <br>
                         <button type="submit" class="fndrsubmit" onclick="vaccinations()"><b>Find Vaccination Center</b></button>
-                        <p id="empty" style="color:red;"></p>     
+                        <p id="rejection" style="color: red;"></p>    
                       </form>
                 </div>
             </div>
@@ -164,6 +164,7 @@
     </body>
                
     <script>
+     var empty = "Please select one of the options provided";
      var acc = document.getElementsByClassName("accordion");
      var i;
      
@@ -245,7 +246,7 @@ function vaccinations() {
         window.location.href = "https://www.wegmans.com/news-media/articles/covid-19-vaccines/";
     } 
     else {
-        document.getElementById("empty").innerHTML = empty.bold();
+        document.getElementById("rejection").innerHTML = empty.bold();
     }
 }
      </script>
