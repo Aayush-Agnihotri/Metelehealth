@@ -55,21 +55,18 @@
             </div>
 
             <div class="cool-title">
-                <p><b>ChatBot</b></p>
+                <p style="margin-bottom: 1%;"><b>ChatBot</b></p>
+                <p style="font-size: small; padding-bottom: 40px;">Need Help? Ask Our ChatBot Your Medical Questions!</p>
             </div>
-
-            <!--<div class="chat-title">
-                Need Help? Ask Our ChatBot Your Medical Questions!
-            </div> -->
 
             <div class="text-chat">
                 <div class="icon-section">
                     <div class="chatbot-icon"><i class="fas fa-robot"></i></div>
                 </div>
-                <div class="chatbot-answer">ChatBot: <span id="chatbot">Hello, I'm ChatBot, your personal assistant on METelehealth. Feel free to ask me any medical questions that you have and I'll happily answer them. I can answer questions like "Where can I find a Doctor?", "What is Covid-19?", or "How can I keep people around me safe?".</span></div>
+                <div class="chatbot-answer"><b>ChatBot: </b><span id="chatbot">Hello, I'm ChatBot, your personal assistant on METelehealth. Feel free to ask me any medical questions that you have and I'll happily answer them. I can answer questions like "Where can I find a Doctor," "What is COVID-19," or "How can I keep people around me safe?" You can even ask me math questions!</span></div>
                 
                 <div class="interactive-area">
-                    <div class="user-answer">User: <span id="user">See your most recent question here!</span></div>
+                    <div class="user-answer"><b>User: </b><span id="user">See your most recent question here!</span></div>
 
                     <div class="question-area">
                         <hr class="text-division">
@@ -86,7 +83,7 @@
                 var here = "HERE";
                 var trigger = [
                     /* Greetings */
-                    ["hi", "hello", "greetings", "whats up", "hola", ],
+                    ["hi", "hello", "greetings", "whats up", "hola", "hey"],
 
                     ["what can you do", "what are you", "who are you", "how are you"],
 
@@ -94,8 +91,7 @@
                     /* Personal Care Page */
                     ["personal care", "protect myself", "protect others", "quote", "quotes"],
 
-                    ["billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay", 
-                    "help paying bills", "payments"],
+                    ["billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay", "help paying bills", "payments"],
 
                     ["doctor", "find doctor", "doctor", "the doctor", "some doctor", "doc", "a doc", "some doc", "find doctors"],
 
@@ -160,7 +156,7 @@
                     /* Greetings */
                     ["Hey there, ask me any medical questions! Also, wash your hands.", "Greetings, I'm happy to answer any medical questions for you.", "Hey, I am happy to answer any of your questions."],
 
-                    ["My name is ChatBot, and I am you personal assitant for anything medical! Just ask me anything related to COVID-19, vaccines, daily health tips, or even contact information and I'll answer them."],
+                    ["My name is ChatBot, and I am you personal assistant for anything medical! Just ask me anything related to COVID-19, vaccines, daily health tips, or even contact information and I'll answer them."],
                     
                     ["Yes, that's me!"],
                     /* Personal Care Page */
