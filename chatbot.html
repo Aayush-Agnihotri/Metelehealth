@@ -91,11 +91,11 @@
                     /* Personal Care Page */
                     ["personal care", "protect myself", "protect others", "quote", "quotes"],
 
-                    ["billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my bills", "pay bills", "paying bills", "bills to pay", "help paying bills", "payments"],
+                    ["billing assistance", "billing help", "bills", "billings", "billing", "bill", "payment", "payment help", "pay my medical bills", "pay bills", "paying bills", "bills to pay", "help paying bills", "payments"],
 
                     ["doctor", "find doctor", "doctor", "the doctor", "some doctor", "doc", "a doc", "some doc", "find doctors"],
 
-                    ["daily health checklist", "daily health", "checklist", "health checklist", "healthy", "stay healthy", "everyday"],
+                    ["daily health checklist", "daily health", "checklist", "health checklist", "healthy", "stay healthy", "everyday", "keep people around me safe"],
 
                     ["disease", "diseases", "infection", "infections", "diagnosis", "diagnoser", "find my disease"],
 
@@ -125,7 +125,7 @@
                     "coronavirus statistics", "coronavirus numbers", "coronavirus number", "coronavirus cases", "coronavirus case", "coronavirus death", "coronavirus infections"],
                     
                     ["guideline", "guidelines", "covid guidelines", "covid19 guidelines", "coronavirus guidelines", "covid guideline", "covid19 guideline", "coronavirus guideline", "mask", 
-                    "social distance", "distance", "distancing", "6 feet", "six feet", "stay safe"],
+                    "social distance", "distance", "distancing", "6 feet", "six feet", "stay safe", "keep people around me safe from covid", "keep people around me safe from covid19", "keep people around me safe from coronavirus"],
 
                     ["fever or chills", "cough", "shortness of breath", "difficulty breathing", "fatigue", "muscle", "body aches", "headaches", "loss of taste", "loss of smell", "sore throat", 
                     "congestion", "runny nose", "nausea" , "vomiting", "diarrhea", "symptoms", "symptom", "covid symptoms", "covid19 symptoms", "coronavirus symptoms", "covid symptom", 
@@ -203,10 +203,10 @@
                     ["You can contact Metelehealth by filling out the contact form " + here.link("contact.html") + "."],
 
                     /* help */
-                    ["No need to fear, CHATBOT is here! Ask me questions like, <q>What is COVID-19,</q> <q>Where can I get a COVID-19 vaccine,</q> or <q>What can I do on METelehealth.</q> You can also search key words like <q>Vaccines</q> or <q>Statistics</q>."],
+                    ["No need to fear, CHATBOT is here! Ask me questions like, <q>What is COVID-19,</q> <q>Where can I get a COVID-19 vaccine,</q> or <q>How can I pay my medical bills.</q> You can also search key words like <q>Vaccines</q> or <q>Statistics</q>."],
 
                 ];
-                var alternative = ["Sorry, it looks like your intellecutal capabilites transcend my processing power. Try asking medical questions like, <q>What is COVID-19,</q> <q>Where can I get a COVID-19 vaccine,</q> or <q>What can I do on METelehealth.</q> You can also search key words like <q>Vaccines</q> or <q>Statistics</q>."];
+                var alternative = ["Sorry, it looks like your intellecutal capabilites transcend my processing power. Try asking medical questions like, <q>What is COVID-19,</q> <q>Where can I get a COVID-19 vaccine,</q> or <q>How can I pay my medical bills.</q> You can also search key words like <q>Vaccines</q> or <q>Statistics</q>."];
                 document.querySelector("#input").addEventListener("keypress", function(e){
                     var key = e.which || e.keyCode;
                     if(key === 13) {
@@ -224,7 +224,8 @@
                         .replace(/what is a /g, "").replace(/what is /g, "").replace(/where can i get /g, "").replace(/can you help me /g, "").replace(/to /g, "").replace(/ to /g, "")
                         .replace(/what should i do /g, "").replace(/what do i do /g, "").replace(/do i have /g, "").replace(/i think i have /g, "").replace(/ near me/g, "")
                         .replace(/ any /g, "").replace(/are there /g, "").replace(/what are /g, "").replace(/ the /g, " ").replace(/how many /g, "").replace(/ are there /g, "")
-                        .replace(/are there /g, "").replace(/how can i /g, "").replace(/ or /g, " ").replace(/i have /g, "").replace(/ an /g, " ").replace(/how can i apply for /g, "");
+                        .replace(/are there /g, "").replace(/how can i /g, "").replace(/ or /g, " ").replace(/i have /g, "").replace(/ an /g, " ").replace(/how can i apply for /g, "").replace(/who are /g, "")
+                        .replace(/where can i /g, "")
                         if(compare(trigger, reply, text)){
                             var product = compare(trigger, reply, text);
                         } else {
