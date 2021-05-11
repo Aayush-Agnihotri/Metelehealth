@@ -205,7 +205,8 @@
                 if (ytally > 0) {
                     x.style.display = "none";
                     document.getElementById("confirmation").innerHTML = "";
-                    document.getElementById("part1rejection").innerHTML = rejection1.bold() + ytally + rejection2.bold();
+                    ytallyString = ytally.toString();
+                    document.getElementById("part1rejection").innerHTML = rejection1.bold() + ytallyString.bold() + rejection2.bold();
                     document.getElementById("part2rejection").innerHTML = "Testing Centers";
                 } else if (ytally < 0 || ytally == 0) {
                     x.style.display = "none";
