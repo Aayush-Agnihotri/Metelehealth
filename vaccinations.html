@@ -59,7 +59,7 @@
 
             <div class="background">
                 <div class = "container8" style="background-color: #ddd;">
-                <img src="images/vaccines.jpeg" alt="Masks and Social Distancing" style="width:100%;" height="600">
+                <img src="images/vaccines.jpg" alt="Masks and Social Distancing" style="width:100%;" height="600">
                 <div class="centered8">Vaccinations</div>
             </div>
 
@@ -83,7 +83,7 @@
                <p><b>Time between Shorts:</b> 1 month (28 days)</p>
                <p><b>Location of Shot:</b> In the muscle of the upper arm</p>
                 </div>
-            <button class="accordion"><i class="fas fa-flask"></i>                      Johnson & Johnson / Janssen</button>
+            <button class="accordion"><i class="fas fa-flask"></i>                      Johnson & Johnson / Janssen (discontinued)</button>
              <div class="panel">
                 <p><b>Name:</b> JNJ-7843675</p>
                 <p><b>Manufacturer:</b> Janssen Pharmaceuticals Companies of Johnson & Johnson</p>
@@ -91,9 +91,13 @@
                 <p><b>Number of Shots:</b> 1</p>
                 <p><b>Location of Shot:</b> In the muscle of the upper arm</p>
             </div>
-            <button class="accordion"><i class="fas fa-file-alt"></i>                       Vaccine Applications</button>
+            <button class="accordion"><i class="fas fa-exclamation-circle"></i>                       Addressing Vaccine Safety Concerns</button>
              <div class="panel">
-                <p>Are you interested in being vaccinated? Fill out an application </a><span class="link"><a href="forms.html"><b>here</b></a></span>.</p>
+                <p>All vaccines are <b>safe</b> and <b>effective</b> and should be taken, barring religious or physical circumstances. The long-term effects of COVID-19 have already proven to be more dangerous than those of the vaccines. Please sign up <b>ASAP</b> to lead your community to herd immunity!</p>
+            </div>
+            <button class="accordion"><i class="fas fa-file-alt"></i>                       Vaccine Appointments</button>
+             <div class="panel">
+                <p>Are you interested in being vaccinated? Fill out a form </a><span class="link"><a href="forms.html"><b>here</b></a></span>.</p>
             </div>
             <button class="accordion"><i class="fas fa-list-ol"></i>                        Precautions for Post-Vaccination</button>
              <div class="panel">
@@ -104,35 +108,49 @@
                 <p><b>5.</b> Quarantine if you experience any symptoms of COVID, especially if you came in contact with someone who tested positive.</p>
             </div>
         </div>
-             <div class="location">Your current location is set to <u>Mercer County</u>.</div>
+             <div class="location">Your current location is set to <u>Reston, Virginia</u>.</div>
             <div>
                 <div class="finder">
                     <form class="form-inline" onsubmit="return false">
         
-                        <div class="tfinder"><label for="vaccinations" style="color: white;" ><b>Find a local vaccination center:</b></label></div>
+                        <div class="tfinder"><label for="vaccinations" style="color: white;" ><b>Find a vaccination center within 25 miles of your current location:</b></label></div>
                         <input list="vaccinations-types" id="vaccinations-choice" name="vaccinations-choice"/>
                         <datalist id="vaccinations-types">
-                            <option value="Capital Health System - Pennington">
-                            <option value="CVS Pharmacy - Ewing">
-                            <option value="CVS Pharmacy - Lawrenceville">
-                            <option value="CVS Pharmacy - Princeton">
-                            <option value="Henry J Austin Health Center - Trenton">
-                            <option value="Hunterdon Family & Sports Medicine - Pennington">
-                            <option value="Infocus Urgent Care - Ewing">
-                            <option value="Mercer County - West Windsor">
-                            <option value="Mercer County/Capital Health - Trenton">
-                            <option value="Rite Aid Store - Trenton">
-                            <option value="Rite Aid Store - Robbinsville">
-                            <option value="Riverside Urgent Care - Ewing">
-                            <option value="RWJ Hamilton - Hamilton">
-                            <option value="ShopRite Pharmacy - Lawrenceville">
-                            <option value="ShopRite Pharmacy - Hightstown">
-                            <option value="ShopRite Pharmacy - Trenton">
-                            <option value="ShopRite Pharmacy - Hamilton">
-                            <option value="ShopRite Pharmacy - Pennington">
-                            <option value="ShopRite Pharmacy - Hamilton Square">
-                            <option value="Stop and Shop Pharmacy - Pennington">
-                            <option value="Wegmans Pharmacy - Princeton">
+                            <option value="Akina Pharmacy - Sterling">
+                            <option value="Costco Wholesale Corporation - Chantilly">
+                            <option value="Costco Wholesale Corporation - Sterling">
+                            <option value="CVS Pharmacy - Chantilly">
+                            <option value="CVS Pharmacy - Great Falls">
+                            <option value="CVS Pharmacy - Herndon">
+                            <option value="CVS Pharmacy - Reston">
+                            <option value="CVS Pharmacy - Sterling">
+                            <option value="Fairfax County Health Department - Reston">
+                            <option value="Giant Food - Ashburn">
+                            <option value="Giant Food - Fairfax">
+                            <option value="Giant Food - Herndon">
+                            <option value="Giant Food - Reston">
+                            <option value="Giant Food - Sterling">
+                            <option value="Harris Teeter Pharmacy - Chantilly">
+                            <option value="Harris Teeter Pharmacy - Fairfax">
+                            <option value="Harris Teeter Pharmacy - Herndon">
+                            <option value="Harris Teeter Pharmacy - Reston">
+                            <option value="Harris Teeter Pharmacy - Sterling">
+                            <option value="Loudoun County Health Department - Sterling">
+                            <option value="My Dr's Pharmacy - Herndon">
+                            <option value="My Psychiatrist - Reston">
+                            <option value="SAFEWAY PHARMACY - Herndon">
+                            <option value="SAFEWAY PHARMACY - Potomac Falls">
+                            <option value="SAFEWAY PHARMACY - Reston">
+                            <option value="SAFEWAY PHARMACY - Sterling">
+                            <option value="Sams Club - Sterling">
+                            <option value="Walgreens - Chantilly">
+                            <option value="Walgreens - Herndon">
+                            <option value="Walgreens - Reston">
+                            <option value="Walgreens - Sterling">
+                            <option value="Walmart - Chantilly">
+                            <option value="Walmart - Sterling">
+                            <option value="Wegman's Food Markets - Chantilly">
+                            <option value="Wegman's Food Markets - Sterling">
                         </datalist>
                         <br>
                         <button type="submit" class="fndrsubmit" onclick="vaccinations()"><b>Find Vaccination Center</b></button>
@@ -180,70 +198,112 @@
      }
 
 function vaccinations() {
-    if (document.getElementById("vaccinations-choice").value == "Capital Health System - Pennington") {
+    if (document.getElementById("vaccinations-choice").value == "Akina Pharmacy - Sterling") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://covidvaccine.nj.gov/";
-    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Ewing") {
+        window.location.href = "https://akinapharmacy.com/covid-vaccine/";
+    } else if (document.getElementById("vaccinations-choice").value == "Costco Wholesale Corporation - Chantilly") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.costco.com/covid-vaccine.html";
+    } else if (document.getElementById("vaccinations-choice").value == "Costco Wholesale Corporation - Sterling") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.costco.com/covid-vaccine.html";
+    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Chantilly") {
         document.getElementById("vaccinations-choice").value = "";
         window.location.href = "https://www.cvs.com/immunizations/covid-19-vaccine";
-    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Lawrenceville") {
+    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Great Falls") {
         document.getElementById("vaccinations-choice").value = "";
         window.location.href = "https://www.cvs.com/immunizations/covid-19-vaccine";
-    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Princeton") {
+    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Herndon") {
         document.getElementById("vaccinations-choice").value = "";
         window.location.href = "https://www.cvs.com/immunizations/covid-19-vaccine";
-    } else if (document.getElementById("vaccinations-choice").value == "Henry J Austin Health Center - Trenton") {
+    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Reston") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://henryjaustin.org/";
-    } else if (document.getElementById("vaccinations-choice").value == "Hunterdon Family & Sports Medicine - Pennington") {
+        window.location.href = "https://www.cvs.com/immunizations/covid-19-vaccine";
+    } else if (document.getElementById("vaccinations-choice").value == "CVS Pharmacy - Sterling") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.hunterdonhealthcare.org/";
-    } else if (document.getElementById("vaccinations-choice").value == "Infocus Urgent Care - Ewing") {
+        window.location.href = "https://www.cvs.com/immunizations/covid-19-vaccine";
+    } else if (document.getElementById("vaccinations-choice").value == "Fairfax County Health Department - Reston") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.infocusurgentcare.org/";
-    } else if (document.getElementById("vaccinations-choice").value == "Mercer County - West Windsor") {
+        window.location.href = "https://guest.vams.cdc.gov/?jurisdiction=FX";
+    } else if (document.getElementById("vaccinations-choice").value == "Giant Food - Ashburn") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://covidvaccine.nj.gov/";
-    } else if (document.getElementById("vaccinations-choice").value == "Mercer County/Capital Health - Trenton") {
+        window.location.href = "https://giantfood.com/pages/covid-info";
+    } else if (document.getElementById("vaccinations-choice").value == "Giant Food - Fairfax") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://covidvaccine.nj.gov/";
-    } else if (document.getElementById("vaccinations-choice").value == "Rite Aid Store - Trenton") {
+        window.location.href = "https://giantfood.com/pages/covid-info";
+    } else if (document.getElementById("vaccinations-choice").value == "Giant Food - Herndon") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.riteaid.com/pharmacy/covid-qualifier";
-    } else if (document.getElementById("vaccinations-choice").value == "Rite Aid Store - Robbinsville") {
+        window.location.href = "https://giantfood.com/pages/covid-info";
+    } else if (document.getElementById("vaccinations-choice").value == "Giant Food - Reston") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.riteaid.com/pharmacy/covid-qualifier";
-    } else if (document.getElementById("vaccinations-choice").value == "Riverside Urgent Care - Ewing") {
+        window.location.href = "https://giantfood.com/pages/covid-info";
+    } else if (document.getElementById("vaccinations-choice").value == "Giant Food - Sterling") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.riversidemedgroup.com/riverside-urgent-care/";
-    } else if (document.getElementById("vaccinations-choice").value == "RWJ Hamilton - Hamilton") {
+        window.location.href = "https://giantfood.com/pages/covid-info";
+    } else if (document.getElementById("vaccinations-choice").value == "Harris Teeter Pharmacy - Chantilly") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.rwjbh.org/patients-visitors/what-you-need-to-know-about-covid-19/schedule-a-vaccine/";
-    } else if (document.getElementById("vaccinations-choice").value == "ShopRite Pharmacy - Lawrenceville") {
+        window.location.href = "https://www.harristeeter.com/covidcare";
+    } else if (document.getElementById("vaccinations-choice").value == "Harris Teeter Pharmacy - Fairfax") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://vaccines.shoprite.com/";
-    } else if (document.getElementById("vaccinations-choice").value == "ShopRite Pharmacy - Hightstown") {
+        window.location.href = "https://www.harristeeter.com/covidcare";
+    } else if (document.getElementById("vaccinations-choice").value == "Harris Teeter Pharmacy - Herndon") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://vaccines.shoprite.com/";
-    } else if (document.getElementById("vaccinations-choice").value == "ShopRite Pharmacy - Trenton") {
+        window.location.href = "https://www.harristeeter.com/covidcare";
+    } else if (document.getElementById("vaccinations-choice").value == "Harris Teeter Pharmacy - Reston") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://vaccines.shoprite.com/";
-    } else if (document.getElementById("vaccinations-choice").value == "ShopRite Pharmacy - Hamilton") {
+        window.location.href = "https://www.harristeeter.com/covidcare";
+    } else if (document.getElementById("vaccinations-choice").value == "Harris Teeter Pharmacy - Sterling") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://vaccines.shoprite.com/";
-    } else if (document.getElementById("vaccinations-choice").value == "ShopRite Pharmacy - Pennington") {
+        window.location.href = "https://www.harristeeter.com/covidcare";
+    } else if (document.getElementById("vaccinations-choice").value == "Loudoun County Health Department - Sterling") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://vaccines.shoprite.com/";
-    } else if (document.getElementById("vaccinations-choice").value == "ShopRite Pharmacy - Hamilton Square") {
+        window.location.href = "https://register.vams.cdc.gov/?jurisdiction=LD";
+    } else if (document.getElementById("vaccinations-choice").value == "My Dr's Pharmacy - Herndon") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://vaccines.shoprite.com/";
-    } else if (document.getElementById("vaccinations-choice").value == "Stop and Shop Pharmacy - Pennington") {
+        window.location.href = "https://www.mydrspharmacy.com/";
+    } else if (document.getElementById("vaccinations-choice").value == "My Psychiatrist - Reston") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://stopandshopsched.rxtouch.com/rbssched/program/covid19/Patient/Advisory";
-    } else if (document.getElementById("vaccinations-choice").value == "Wegmans Pharmacy - Princeton") {
+        window.location.href = "https://mypsych.com/covid-19-response/";
+    } else if (document.getElementById("vaccinations-choice").value == "SAFEWAY PHARMACY - Herndon") {
         document.getElementById("vaccinations-choice").value = "";
-        window.location.href = "https://www.wegmans.com/news-media/articles/covid-19-vaccines/";
-    } 
+        window.location.href = "https://www.mhealthappointments.com/covidappt";
+    } else if (document.getElementById("vaccinations-choice").value == "SAFEWAY PHARMACY - Potomac Falls") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.mhealthappointments.com/covidappt";
+    } else if (document.getElementById("vaccinations-choice").value == "SAFEWAY PHARMACY - Reston") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.mhealthappointments.com/covidappt";
+    } else if (document.getElementById("vaccinations-choice").value == "SAFEWAY PHARMACY - Sterling") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.mhealthappointments.com/covidappt";
+    } else if (document.getElementById("vaccinations-choice").value == "Sams Club - Sterling") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.samsclub.com/pharmacy/immunization?imzType=covid";
+    } else if (document.getElementById("vaccinations-choice").value == "Walgreens - Chantilly") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.walgreens.com/findcare/vaccination/covid-19";
+    } else if (document.getElementById("vaccinations-choice").value == "Walgreens - Herndon") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.walgreens.com/findcare/vaccination/covid-19";
+    } else if (document.getElementById("vaccinations-choice").value == "Walgreens - Reston") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.walgreens.com/findcare/vaccination/covid-19";
+    } else if (document.getElementById("vaccinations-choice").value == "Walgreens - Sterling") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.walgreens.com/findcare/vaccination/covid-19";
+    } else if (document.getElementById("vaccinations-choice").value == "Walmart - Chantilly") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.walmart.com/account/login?returnUrl=%2Fpharmacy%2Fclinical-services%2Fimmunization%2Fscheduled%3FimzType%3Dcovid%26emailMe%3Dfalse";
+    } else if (document.getElementById("vaccinations-choice").value == "Walmart - Sterling") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.walmart.com/account/login?returnUrl=%2Fpharmacy%2Fclinical-services%2Fimmunization%2Fscheduled%3FimzType%3Dcovid%26emailMe%3Dfalse";
+    } else if (document.getElementById("vaccinations-choice").value == "Wegman's Food Markets - Chantilly") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.wegmans.com/pharmacy/";
+    } else if (document.getElementById("vaccinations-choice").value == "Wegman's Food Markets - Sterling") {
+        document.getElementById("vaccinations-choice").value = "";
+        window.location.href = "https://www.wegmans.com/pharmacy/";
+    }
     else {
         document.getElementById("rejection").innerHTML = empty.bold();
     }
