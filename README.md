@@ -13,4 +13,3 @@ serves. Sections of the site may include photos, product descriptions, rendering
 news updates.
 
 Link to website: https://aayush-agnihotri.github.io/webmaster/home
-Repository: https://github.com/Aayush-Agnihotri/webmaster
