@@ -29,6 +29,7 @@
                 <p style="margin-left: 1%;">You can download Zoom <a href="https://zoom.us/">here.</a></p>
                 <p style="margin-left: 1%;">To check if you or a loved one has experienced symptoms of COVID-19, please visit this <a href="questionnaire.html">questionnaire.</a></p>
             </div>
+            <button class="button close1 fndrsubmit" id="hide"></button>
         </div>
     </div>
     <!--End of modal-->
@@ -157,7 +158,7 @@
                     <h1 style="padding-left: 25%;"><b>About Us</b></h1><br><br>
                 </div>
                     <div class="text-paragraph">
-                        <span style="padding-left: 5%; width: 40ch;">For over 15 years, METelehealth has been making a difference in the lives of our patients, caregivers, and staff. Our international suite of services includes personal healthcare, realtime assistance, and around the clock counseling. Our commitment to customer service and patients' needs makes us a trusted partner wherever healthcare is needed.<br><br></span>
+                        <span style="padding-left: 5%; width: 40ch;">For over 15 years, METelehealth has been making a difference in the lives of our patients, caregivers, and staff. Our international suite of services includes personal healthcare, realtime assistance, and around the clock counseling. Our commitment to customer service and patient care needs makes us a trusted partner wherever healthcare is needed.<br><br></span>
                     </div>
                     <br>
                     <div class="text-paragraph">
@@ -214,7 +215,7 @@
         <div class="card" style="margin-left: 15%; margin-bottom: 2%; display: inline-block;">
             <div class="card-container">
                 <p style="font-size: larger; margin-left: 10%;"><i class="fas fa-quote-left"></i></p>
-                <p style="font-size: large; margin-left: 10%; max-width: 65ch;">I have been working with METelehealth for 3 years. They have reliably provided me with expert advice and services related to medical telecommunications.</p>
+                <p style="font-size: large; margin-left: 10%; max-width: 65ch;">I have been working with METelehealth for 3 years. They have reliably provided me with expert advice and services in relation to medical telecommunications.</p>
                 <p style="font-size: larger; margin-left: 10%;"><b>Joseph D.</b></p>
                 <p style="font-size: medium; margin-left: 10%;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
@@ -273,6 +274,8 @@
         var empty = "Please select one of the options listed";
         
         function myFunction() {
+            var hide = document.getElementById("hide");
+            hide.style.display = "none";
             var modal = document.getElementById("myModal");
             var span = document.getElementsByClassName("close")[0];
             var button = document.getElementsByClassName("close1")[0];
