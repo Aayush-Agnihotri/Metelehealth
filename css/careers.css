@@ -221,6 +221,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   }
+
+  .holder:hover {
+    text-decoration: underline;
+  }
   
   .text {
   background-color: white;
