@@ -12,13 +12,12 @@
     </head>
     <body>
         <div class="header">
-            <p>If you are experiencing COVID-19 <a href="symptoms.html" style="color: white;"><b>symptoms</b></a>, please email <a style="color: white;" href="mailto:contact@metelehealth.org"><b>contact@metelehealth.org</b></a> or call <a href="contact.html" style="color: white;"><b>1-800-123-4567</b></a>.</p>
+            <p>If you are experiencing COVID-19 <a href="symptoms.html" style="color: white;"><b>symptoms</b></a>, please call <a href="contact.html" style="color: white;"><b>1-800-123-4567</b></a> or email <a style="color: white;" href="mailto:contact@metelehealth.org"><b>contact@metelehealth.org</b></a></p>
         </div>
         <div>
             <a href="home.html" style="float:left; position:absolute; padding-left: 5%; padding-top: 0.4%;"><img class="logo" src="images\logo.png"></a>
             <div class="navbar">
             <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="sources.html"><i class="fas fa-lightbulb"></i> Sources</a>
                 <div class="dropdown">
                     <a href="careers.html"><i class="fas fa-user-md"></i> Careers</a>
                     <div class="dropdown-content" style="min-width: 180px;">
@@ -99,52 +98,36 @@
 </div>
     <div class="background">
         <h4 style="color: rgb(23, 70, 143);">Click&nbsp;<a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/index.html">here</a>&nbsp;for more information about testing</h4></div>
-        <div class="location" style="color: rgb(99, 180, 99);">Your current location is set to <u>Middlesex County, New Jersey</u>.</div>
+        <div class="location" style="color: rgb(99, 180, 99);">Your current location is set to <u>Reston, Virginia</u>.</div>
         <div class="finder">
             <form class="form-inline" onsubmit="return false"> 
-            <div class="tfinder"><label for="testing centers" style="color:white;"><b>Find a local center at or near to your current location.</b></label></div>
+            <div class="tfinder"><label for="testing centers" style="color:white;"><b>Find a testing center within 25 miles of your current location.</b></label></div>
             <input list="testingcenters-types" id="testingcenters-choice" name="testingcenters-choice"/>
                 <datalist id="testingcenters-types">
-                    <option value = "Henry J. Austin Health Center - Trenton">
-                    <option value = "Concentra Urgent Care - Lawrence"> 
-                    <option value = "CVS - Hamilton">
-                    <option value = "CVS - Hamilton">
-                    <option value = "CVS - Lawrence">
-                    <option value = "CVS - Princeton">
-                    <option value = "CVS - Robbinsville">
-                    <option value = "CVS - Trenton">
-                    <option value = "CVS - Trenton">
-                    <option value = "InFocus Urgent Care - Princeton Junction">
-                    <option value = "Patient First - Hamilton"> 
-                    <option value = "Rite Aid - Robbinsville">
-                    <option value = "Riverside Urgent Care - Hamilton">
-                    <option value = "Doctor's Medi Center Plaza 12 - Carteret ">
-                    <option value = "Brunswick Urgent Care - East Brunswick">
-                    <option value = "Med Express - East Brunswick">
-                    <option value = "CityMD Urgent Care - East Brunswick">
-                    <option value = "CVS Drive Thru - East Brunswick"> 
-                    <option value = "Immediate Care - Edison">
-                    <option value = "Rite Aid - Edison">
-                    <option value = "CVS Drive thru - Edison">
-                    <option value = "CVS Drive thru - Edison">
-                    <option value = "Excel Urgent Care of Iselin">
-                    <option value = "CVS Drive thru - Matawan">
-                    <option value = "MyInstaDoc - Monroe">
-                    <option value = "Hackensack Meridian Urgent Care - Monroe">
-                    <option value = "Middlesex County Walk-Up Test Site - New Brunswick">
-                    <option value = "Robert Wood Johnson University Hospital - New Brunswick">
-                    <option value = "InFocus Urgent Care - New Brunswick"> 
-                    <option value = "PM Pediatrics Urgent Care - North Brunswick">
-                    <option value = "CVS Drive thru - North Brunswick">
-                    <option value = "CVS Drive thru - Old Bridge">
-                    <option value = "Excel Urgent Care of Old Bridge">
-                    <option value = "Raritan Bay Medical Center - Old Bridge">
-                    <option value = "Jewish Renaissance Medical Center - Perth Amboy"> 
-                    <option value = "Middlesex County Drive Thru Testing Site - Piscataway">
-                    <option value = "Hackensack Meridian Urgent Care - Piscataway"> 
-                    <option value = "CVS Drive thru - Plainsboro"> 
-                    <option value = "AFC Urgent Care - South Plainfield"> 
-                    <option value = "Kinder Pediatric Urgent Care - Woodbridge">
+                    <option value = "Kaiser Permanente - Reston Medical Center">
+                    <option value = "ARCPoint Labs of Herndon">
+                    <option value = "My Dr's Pharmacy">
+                    <option value = "Walgreens - 603 Elden St.">
+                    <option value = "Prosperity Internal Medicine">
+                    <option value = "HealthWorks - Herndon"> 
+                    <option value = "PM Pediatrics - Herndon">
+                    <option value = "The Iyer Clinic-Herndon Office">
+                    <option value = "CVS Pharmacy - Seneca Rd.">
+                    <option value = "ResourcePath Clinical Laboratory">
+                    <option value = "CVS Pharmacy - 3071 Centreville Rd.">
+                    <option value = "Walgreens - 46965 Cedar Lake Plz"> 
+                    <option value = "Ace Medical Care">
+                    <option value = "CareNow Urgent Care - Chantilly">
+                    <option value = "CareNow Urgent Care - Sterling at Cascades">
+                    <option value = "Inova Fair Oaks Hospital"> 
+                    <option value = "Fairfax Pediatric Associates"> 
+                    <option value = "CVS Pharmacy - Centerville Rd.">
+                    <option value = "Khalil MD Primary Care">
+                    <option value = "Walk-In Medical Care - Fairfax">
+                    <option value = "Mira Scientific">
+                    <option value = "Any Lab Test Now">
+                    <option value = "Fairfax Medical Lab">
+                    <option value = "Inova Health Care Services - Ashburn">
                 </datalist>
             <br> 
             <button type="submit" class="fndrsubmit" onclick="testingcenters()"><b>Find Testing Center</b></button>
@@ -192,127 +175,78 @@
               });
             }
             function testingcenters() {
-    if (document.getElementById("testingcenters-choice").value == "Henry J. Austin Health Center - Trenton") {
+    if (document.getElementById("testingcenters-choice").value == "Kaiser Permanente - Reston Medical Center") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://henryjaustin.org/now-offering-covid-19-testing-in-trenton/";
-    } else if (document.getElementById("testingcenters-choice").value == "Concentra Urgent Care - Lawrence") {
+        window.location.href = "https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/health-wellness/coronavirus-information";
+    } else if (document.getElementById("testingcenters-choice").value == "ARCPoint Labs of Herndon") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.concentra.com/coronavirus-2019-covid-19/";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Hamilton ") {
+        window.location.href = "https://www.arcpointlabs.com/";
+    } else if (document.getElementById("testingcenters-choice").value == "My Dr's Pharmacy") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/hamiltontownship-covid-6039.html";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Hamilton ") {
+        window.location.href = "https://www.mydrspharmacy.com/";
+    } else if (document.getElementById("testingcenters-choice").value == "Walgreens - 603 Elden St.") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/hamiltontownship-covid-2816.html";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Lawrence") {
+        window.location.href = "https://www.walgreens.com/findcare/covid19/testing?ban=covid_testing";
+    } else if (document.getElementById("testingcenters-choice").value == "Prosperity Internal Medicine") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/lawrenceville-covid-2126.html";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Princeton") {
+        window.location.href = "https://prosperitymedicine.com/";
+    } else if (document.getElementById("testingcenters-choice").value == "HealthWorks - Herndon") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/princeton-covid-5871.html";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Robbinsville") {
+        window.location.href = "http://hwnova.org/covid19/"
+    } else if (document.getElementById("testingcenters-choice").value == "PM Pediatrics - Herndon") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/robbinsville-covid-2117.html";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Trenton") {
+        window.location.href = "https://pmpediatrics.com/location/virginia-herndon/"
+    } else if (document.getElementById("testingcenters-choice").value == "The Iyer Clinic-Herndon Office") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/trenton-covid-2870.html";
-    } else if (document.getElementById("testingcenters-choice").value == "CVS - Trenton") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/clinic-locator/covid-19-testing/trenton-covid-1967.html";
-    } else if (document.getElementById("testingcenters-choice").value == "InFocus Urgent Care - Princeton Junction") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.infocusurgentcare.org/?utm_source=gmb_auth";
-    } else if (document.getElementById("testingcenters-choice").value == "Patient First - Hamilton") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.patientfirst.com/locations/south-jersey/hamilton?utm_source=local&utm_medium=organic&utm_campaign=gmb";
-    } else if (document.getElementById("testingcenters-choice").value == "Rite Aid - Robbinsville ") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.riteaid.com/locations/nj/robbinsville/2370-route-33.html";
-    } else if (document.getElementById("testingcenters-choice").value == "Riverside Urgent Care - Hamilton") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.riversidemedgroup.com/services/urgent-care/hamilton-nj/";
-    } else if (document.getElementById("testingcenters-choice").value == "Doctor's Medi Center Plaza 12") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://doctorsmedicenter.com/appointment";
-    } else if (document.getElementById("testingcenters-choice").value == "Brunswick Urgent Care") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.brunswickurgentcare.org/";
-    } else if (document.getElementById("testingcenters-choice").value == "Med Express") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.medexpress.com/location/nj/east-brunswick/ebj/"
-    } else if (document.getElementById("testingcenters-choice").value == "City MD Urgent Care") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.citymd.com/urgent-care-locations"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru") {
+        window.location.href = "http://www.iyerclinic.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "CVS Pharmacy - Seneca Rd.") {
         document.getElementById("testingcenters-choice").value = "";
         window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "Immediate Care - Edison") {
+    } else if (document.getElementById("testingcenters-choice").value == "ResourcePath Clinical Laboratory") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://immcare.com/locations/edison-location/"
-    } else if (document.getElementById("testingcenters-choice").value == "Rite Aid - Edison") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.riteaid.com/pharmacy/services/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru - Edison") {
+        window.location.href = "https://www.resourcepath.net/"
+    } else if (document.getElementById("testingcenters-choice").value == "CVS Pharmacy - 3071 Centreville Rd.") {
         document.getElementById("testingcenters-choice").value = "";
         window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru - Edison") {
+    } else if (document.getElementById("testingcenters-choice").value == "Walgreens - 46965 Cedar Lake Plz") {
+        document.getElementById("testingcenters-choice").value = "";
+        window.location.href = "https://www.walgreens.com/findcare/covid19/testing?ban=covid_testing"
+    } else if (document.getElementById("testingcenters-choice").value == "Ace Medical Care") {
+        document.getElementById("testingcenters-choice").value = "";
+        window.location.href = "http://acemedicalcare.org/"
+    } else if (document.getElementById("testingcenters-choice").value == "CareNow Urgent Care - Chantilly") {
+        document.getElementById("testingcenters-choice").value = "";
+        window.location.href = "https://www.carenow.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "CareNow Urgent Care - Sterling at Cascades") {
+        document.getElementById("testingcenters-choice").value = "";
+        window.location.href = "https://www.carenow.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "Inova Fair Oaks Hospital") {
+        document.getElementById("testingcenters-choice").value = "";
+        window.location.href = "https://www.inova.org/locations/inova-fair-oaks-hospital"
+    } else if (document.getElementById("testingcenters-choice").value == "Fairfax Pediatric Associates") {
+        document.getElementById("testingcenters-choice").value = "";
+        window.location.href = "https://www.fairfaxpediatrics.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "CVS Pharmacy - Centerville Rd.") {
         document.getElementById("testingcenters-choice").value = "";
         window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "Excel Urgent Care of Iselin") {
+    } else if (document.getElementById("testingcenters-choice").value == "Khalil MD Primary Care") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://excelurgentcareofiselin.com/"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru - Matawan") {
+        window.location.href = "http://www.drzkhalil.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "Walk-In Medical Care - Fairfax") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "MyInstaDoc - Monroe") {
+        window.location.href = "https://justwalkinmedicalcare.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "Mira Scientific") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://myinstadocmonroe.com/coronavirus-testing/"
-    } else if (document.getElementById("testingcenters-choice").value == "Hackensack Meridian Urgent Care - Monroe") {
+        window.location.href = "https://www.mirascientific.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "Any Lab Test Now") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.hackensackmeridianhealth.org/locations/urgentcare-convenientcare/"
-    } else if (document.getElementById("testingcenters-choice").value == "Middlesex County Walk-Up Test Site - New Brunswick") {
+        window.location.href = "https://www.anylabtestnow.com/potomac-falls-20165/"
+    } else if (document.getElementById("testingcenters-choice").value == "Fairfax Medical Lab") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "http://www.middlesexcountynj.gov/Government/Departments/PSH/Pages/COVID-19--Testing.aspx"
-    } else if (document.getElementById("testingcenters-choice").value == "Robert Wood Johnson University Hospital - New Brunswick") {
+        window.location.href = "https://fairfaxmedlab.com/"
+    } else if (document.getElementById("testingcenters-choice").value == "Inova Health Care Services - Ashburn") {
         document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.rwjbh.org/patients-visitors/what-you-need-to-know-about-covid-19/"
-    } else if (document.getElementById("testingcenters-choice").value == "InFocus Urgent Care - New Brunswick") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.infocusurgentcare.org/"
-    } else if (document.getElementById("testingcenters-choice").value == "PM Pediatrics Urgent Care - North Brunswick") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://pmpediatrics.com/location/new-jersey-north-brunswick/"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru - North Brunswick") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru - Old Bridge") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "Excel Urgent Care of Old Bridge") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://excelurgentcareofoldbridge.com/"
-    } else if (document.getElementById("testingcenters-choice").value == "Raritan Bay Medical Center - Old Bridge") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.hackensackmeridianhealth.org/covid19/"
-    } else if (document.getElementById("testingcenters-choice").value == "Jewish Renaissance Medical Center - Perth Amboy") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://jrmc.us/jrmc-covid-19-testing-pre-registration/"
-    } else if (document.getElementById("testingcenters-choice").value == "Middlesex County Drive Thru Testing Site - Piscataway") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "http://www.middlesexcountynj.gov/Government/Departments/PSH/Pages/COVID-19--Testing.aspx"
-    } else if (document.getElementById("testingcenters-choice").value == "Hackensack Meridian Urgent Care - Piscataway") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.hackensackmeridianhealth.org/locations/urgentcare-convenientcare/"
-    } else if (document.getElementById("testingcenters-choice").value == "CVS Drive thru - Plainsboro") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://www.cvs.com/minuteclinic/covid-19-testing"
-    } else if (document.getElementById("testingcenters-choice").value == "AFC Urgent Care - South Plainfield") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://doctorsexpresssouthplainfield.com/important-information-regarding-covid-19-diagnostic-testing/"
-    } else if (document.getElementById("testingcenters-choice").value == "Kinder Pediatric Urgent Care - Woodbridge") {
-        document.getElementById("testingcenters-choice").value = "";
-        window.location.href = "https://kinderpeds.com/"
-    
+        window.location.href = "https://www.inova.org/"
     } else {
         document.getElementById("rejection").innerHTML = empty.bold();
     }
