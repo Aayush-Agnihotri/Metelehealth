@@ -65,6 +65,7 @@
 
     <div class="container" style="width: 80%; margin: auto; margin-top: 2%;">
         <form onsubmit="submission(); return false">
+        <div id="form">
           <label for="fname">First Name<span style="color: gray;"> (Required)</span></label>
           <input type="text" id="fname" name="firstname" placeholder="Your first name">
       
@@ -92,6 +93,7 @@
           <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
       
           <input id="submit" type="submit" value="Submit" onclick="submission()">
+        </div>
 
           <p id="rejection" style="color: red;"></p>
           <p id="confirmation" style="color: green;"></p>
@@ -122,11 +124,14 @@
 
         function submission() {
             var x = document.getElementById("submit");
+            var hide = document.getElementById("form");
 
             if ((document.getElementById("fname").value != "" && document.getElementById("email").value != "") && document.getElementById("subject").value != "") {
+                hide.style.display = "none";
                 document.getElementById("rejection").innerHTML = "";
                 document.getElementById("confirmation").innerHTML = confirmation.bold();
                 x.style.display = "none";
+                
             } else {
                 document.getElementById("confirmation").innerHTML = "";
                 document.getElementById("rejection").innerHTML = rejection.bold();
