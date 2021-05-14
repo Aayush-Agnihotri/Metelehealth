@@ -287,6 +287,14 @@
   font-size: 18px;
   height: 25px;
   }
+
+  .hiring {
+    background-color: rgb(23, 70, 143);
+    padding: 5px;
+    color: white;
+    margin-top: -30px;
+    font-size: 25px;
+  }
   
   @-webkit-keyframes fade {
   from {opacity: .4}
