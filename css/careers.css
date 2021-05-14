@@ -222,6 +222,10 @@
   background-size: cover;
   }
 
+  a:visited {
+    color: white;
+  }
+
   .holder:hover {
     text-decoration: underline;
   }
@@ -428,4 +432,4 @@ ul { list-style-type: none; padding: 0; margin: 0; }
 
 .subnav .accordion > li .holder { display: flex; padding: 18px 32px 17px; border-top: 1px solid #cdcdcd; position: relative; }
 
-.subnav .accordion a { color:white; font-weight: bold; }}
+.subnav .accordion a { font-weight: bold; }}

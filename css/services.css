@@ -116,10 +116,6 @@ body, html{
   text-align: left;
 }
 
-.holder:hover {
-  text-decoration: underline;
-}
-
 .text {
     background-color: white;
     width: 100%;
