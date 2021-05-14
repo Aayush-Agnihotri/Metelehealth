@@ -230,3 +230,8 @@ body, html{
     font-family: inherit;
     margin: 0; 
   }
+  @viewport {
+    zoom: 1.0; 
+    width: extend-to-zoom;
+  }
+
