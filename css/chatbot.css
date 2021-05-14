@@ -122,21 +122,19 @@ body, html{
 }
 
  .text-chat {
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 60px;
-    border-radius: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    border-radius: 25px;
     border-color: 2px solid black;
-    padding: 20px;
-    height: 500px;
+    padding: 1.7%;
+    height: 55%;
     background-color: rgba(255, 255, 255, 0.699);
 
 }
 
 .interactive-area {
-    /* position: absolute; */
-    bottom: 10px;
-    /* width: 62%; */
+    bottom: 2%;
 }
 
 .chatbot-icon {
@@ -144,15 +142,15 @@ body, html{
     margin-left: 45%;
     font-size: 60px;
     color: rgb(60, 102, 141);
-    padding: 5px;
+    padding: 0.3%;
     width: 10%;
     border-radius: 50%;
     background-color: white; 
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 .chatbot-answer {
-    padding: 10px;
+    padding: 1%;
     border: 2px solid #dedede;
     background-color: #f1f1f1;
     border-radius: 5px;
@@ -161,7 +159,7 @@ body, html{
 
 }
 .question-area {
-    margin-top: 25px;
+    margin-top: 2%;
 }
 
  .question-box {
