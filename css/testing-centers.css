@@ -293,9 +293,5 @@ h4 {
     font-size: 20px; 
     text-align: center;
 }
-@viewport {
-  zoom: 1.0; 
-  width: extend-to-zoom; 
-}
 
 
