@@ -495,3 +495,83 @@ ul {
   font-weight: bold;
 }
 }
+
+@media screen and (max-width: 800px) {
+  .modal {
+    max-width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 40ch;
+    margin: auto;
+    max-width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .slideshow {
+    height: 350px;
+  }
+  .finder {
+    display: none;
+  }
+  .parallax {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
+  .text-container {
+    width: 100%;
+    margin: auto;
+  }
+  .text-title {
+    width: 100%;
+    margin: auto;
+  }
+  .text-paragraph {
+    width: 30ch;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .chatbot-icon {
+    display: none;
+  }
+  .card2 {
+    width: 50px;
+    display: block;
+    margin: none;
+  }
+  .background img {
+    margin: auto;
+    height: 400px;
+  }
+  .card {
+    width: 80%;
+  }
+  li {
+    list-style-type: none;
+    text-decoration: underline;
+  }
+  .navbar li{
+    text-decoration: none;
+  }
+  .footer li {
+    text-decoration: none;
+  }
+  .holder {
+    margin: auto;
+    left: 50%;
+  }
+  .footer {
+    margin: auto;
+  }
+  .footer img {
+    height: 60px;
+  }
+}

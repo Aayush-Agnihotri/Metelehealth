@@ -105,7 +105,6 @@ body, html{
 
   }
 
-/* Akshat CSS */
 .cool-title {
     text-align: center;
     font-size: 60px;  
@@ -229,4 +228,66 @@ input[type=text], select{
     text-decoration: none;
     font-size: 18px;
     height: 25px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .modal {
+      max-width: 100%;
+      height: 100%;
+    }
+    .header {
+      width: 40ch;
+      margin: auto;
+      max-width: 100%;
+    }
+    .logo {
+      display: none;
+    }
+    .navbar a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+    }
+    .slideshow {
+      height: 350px;
+    }
+    .finder {
+      display: none;
+    }
+    .parallax {
+      display: none;
+    }
+    .map {
+      display: none;
+    }
+    .text-container {
+      width: 100%;
+      margin: auto;
+    }
+    .text-title {
+      width: 100%;
+      margin: auto;
+    }
+    .text-paragraph {
+      width: 30ch;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .chatbot-icon {
+      display: none;
+    }
+    .card2 {
+      width: 50px;
+      display: block;
+      margin: none;
+    }
+    img {
+      margin: auto;
+    }
+    .card {
+      width: 80%;
+    }
+    .footer {
+      margin-top: 100px;
+    }
   }
